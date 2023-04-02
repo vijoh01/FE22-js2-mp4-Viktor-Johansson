@@ -1,0 +1,29 @@
+{
+  "name": "mp4",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --dist-dir docs --public-url ./",
+    "clean": "del-cli ./.parcel-cache ./docs ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijoh01/FE22-js2-mp4-Viktor-Johansson.git"
+  },
+  "author": "Viktor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijoh01/FE22-js2-mp4-Viktor-Johansson/issues"
+  },
+  "homepage": "https://github.com/vijoh01/FE22-js2-mp4-Viktor-Johansson#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "cssnano": "^5.1.15",
+    "del-cli": "^5.0.0",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.21",
+    "typescript": "^5.0.3"
+  }
+}

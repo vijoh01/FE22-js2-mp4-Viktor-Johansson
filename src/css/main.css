@@ -1,0 +1,95 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(18, 18, 18);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    width: 100%;
+    min-width: 25rem;
+    background: url(../imgs/cat.jpg);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.screen {
+    width: 100%;
+    
+    font-size: 2rem;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.screenText {
+    font-size: 2rem;
+    resize: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    background: none;
+    backdrop-filter: blur(10px);
+}
+
+.buttons {
+    height: 100%;
+    width: 100%;
+ 
+    overflow: hidden;
+}
+
+.buttons *:hover {
+    border: 2px solid black;
+    transition: border 0.4s ease;
+}
+
+.buttons button {
+    width: calc(25% - 2.1rem);
+    height: calc(8rem - 3rem);
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.069);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background: none;
+    backdrop-filter: blur(10px);
+}
+
+.buttons .button0 {
+    width: calc(53% - 2rem);
+    margin-right: 25%;
+}
+
+.buttons .buttonClear {
+    margin-right: 53%;
+}
+
+@media  screen and (min-width: 500px) {
+    main {
+        width: 30rem;
+    }
+
+    .buttons button {
+    width: calc(25% - 2rem);
+    height: calc(8rem - 2rem);
+    margin: 1rem;
+    border: 2px solid rgba(0, 0, 0, 0.069);
+    border-radius: 1.5rem;
+    background: none;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    }
+    
+}
